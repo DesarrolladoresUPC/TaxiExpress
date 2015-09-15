@@ -1,0 +1,37 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Conductor Registros</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nombre</th>
+      <th>Telefono</th>
+      <th>Apellido</th>
+      <th>Correo</th>
+      <th>Contraseña</th>
+      <th>Codigo</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @conductor_registros.each do |conductor_registro| %>
+      <tr>
+        <td><%= conductor_registro.nombre %></td>
+        <td><%= conductor_registro.telefono %></td>
+        <td><%= conductor_registro.apellido %></td>
+        <td><%= conductor_registro.correo %></td>
+        <td><%= conductor_registro.contraseña %></td>
+        <td><%= conductor_registro.codigo %></td>
+        <td><%= link_to 'Show', conductor_registro %></td>
+        <td><%= link_to 'Edit', edit_conductor_registro_path(conductor_registro) %></td>
+        <td><%= link_to 'Destroy', conductor_registro, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Conductor registro', new_conductor_registro_path %>

@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nombre:</strong>
+  <%= @conductor_registro.nombre %>
+</p>
+
+<p>
+  <strong>Telefono:</strong>
+  <%= @conductor_registro.telefono %>
+</p>
+
+<p>
+  <strong>Apellido:</strong>
+  <%= @conductor_registro.apellido %>
+</p>
+
+<p>
+  <strong>Correo:</strong>
+  <%= @conductor_registro.correo %>
+</p>
+
+<p>
+  <strong>Contraseña:</strong>
+  <%= @conductor_registro.contraseña %>
+</p>
+
+<p>
+  <strong>Codigo:</strong>
+  <%= @conductor_registro.codigo %>
+</p>
+
+<%= link_to 'Edit', edit_conductor_registro_path(@conductor_registro) %> |
+<%= link_to 'Back', conductor_registros_path %>

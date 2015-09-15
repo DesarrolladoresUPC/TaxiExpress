@@ -1,0 +1,2 @@
+module ClienteRegistrosHelper
+end
