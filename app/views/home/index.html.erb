@@ -1,10 +1,11 @@
-<section id="banner">
-				<div class="inner">
-					<h2>TaxiExpress</h2>
-					<p>Pide tu taxi ya!!</p>
-					<ul class="actions">
-						<li><a href="#content" class="button big special">Inicia Sesions</a></li>
-						<li><a href="#elements" class="button big alt">Registrarse</a></li>
-					</ul>
-				</div>
+<section id="banner"> 
+   <div class="inner">
+	 <h2>TaxiExpress</h2>
+		<p>Pide tu taxi ya!!</p>
+		  <ul class="actions">
+	       <li><%= button_to "Ingresar Ahora", sesion_primario_path, :id => "boton1", :class => "button big special", :method => :get %></li>	                    
+		   <li><%= button_to "Registrarse", new_conductor_registro_path, :id => "boton1", :class => "button big alt", :method => :get %></li>			
+				
+			</ul>
+	</div>
 </section>

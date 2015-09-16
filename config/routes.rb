@@ -1,5 +1,16 @@
 Rails.application.routes.draw do
-  #get 'home/index'
+  get 'sesion/primario'
+
+  get 'operator/admin'
+
+  get 'iniciar/standar'
+
+  get 'iniciar/client'
+
+  get 'iniciar/chofer'
+
+
+  
 
   resources :conductor_registros
   resources :cliente_registros
