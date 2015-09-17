@@ -10,7 +10,6 @@ Rails.application.routes.draw do
   resources :dirfavorita_registros
   resources :conductor_registros
   resources :cliente_registros
-  resources :categoria
   resources :reservas
 
   get 'sesion/primario'
