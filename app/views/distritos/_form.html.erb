@@ -1,0 +1,12 @@
+<%= simple_form_for(@distrito) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :codigo %>
+    <%= f.input :nombre %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

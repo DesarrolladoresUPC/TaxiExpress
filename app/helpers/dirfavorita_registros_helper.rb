@@ -1,0 +1,2 @@
+module DirfavoritaRegistrosHelper
+end

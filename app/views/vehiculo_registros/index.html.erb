@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Relación de Vehiculos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Placa</th>
+      <th>Marca</th>
+      <th>Modelo</th>
+      <th>Color</th>
+      <th>Categoria</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @vehiculo_registros.each do |vehiculo_registro| %>
+      <tr>
+        <td><%= vehiculo_registro.placa %></td>
+        <td><%= vehiculo_registro.marca %></td>
+        <td><%= vehiculo_registro.modelo %></td>
+        <td><%= vehiculo_registro.color %></td>
+        <td><%= vehiculo_registro.categoria %></td>
+        <td><%= link_to 'Show', vehiculo_registro %></td>
+        <td><%= link_to 'Edit', edit_vehiculo_registro_path(vehiculo_registro) %></td>
+        <td><%= link_to 'Destroy', vehiculo_registro, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'Registrar Vehiculo', new_vehiculo_registro_path %>

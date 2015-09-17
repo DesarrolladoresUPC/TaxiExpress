@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Relación de Feedbacks</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Calificacion</th>
+      <th>Comentario</th>
+      <th>Distrito</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @feedback_registros.each do |feedback_registro| %>
+      <tr>
+        <td><%= feedback_registro.calificacion %></td>
+        <td><%= feedback_registro.comentario %></td>
+        <td><%= feedback_registro.distrito %></td>
+        <td><%= link_to 'Show', feedback_registro %></td>
+        <td><%= link_to 'Edit', edit_feedback_registro_path(feedback_registro) %></td>
+        <td><%= link_to 'Destroy', feedback_registro, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'Registrar Feedback', new_feedback_registro_path %>

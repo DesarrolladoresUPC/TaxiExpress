@@ -1,0 +1,2 @@
+module OperadorRegistrosHelper
+end

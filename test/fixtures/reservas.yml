@@ -1,0 +1,33 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  codigo: MyString
+  direccion_origen: MyString
+  distrito_origen: MyString
+  direccion_destino: MyString
+  distrito_destino: MyString
+  cantidad_pasajeros: 
+  categoria: MyString
+  tarifa_final: 9.99
+  metodo_pago: MyString
+  estado: MyString
+  chofer: MyString
+  usuario: MyString
+  created: 2015-09-16 18:21:14
+  updated: 2015-09-16 18:21:14
+
+two:
+  codigo: MyString
+  direccion_origen: MyString
+  distrito_origen: MyString
+  direccion_destino: MyString
+  distrito_destino: MyString
+  cantidad_pasajeros: 
+  categoria: MyString
+  tarifa_final: 9.99
+  metodo_pago: MyString
+  estado: MyString
+  chofer: MyString
+  usuario: MyString
+  created: 2015-09-16 18:21:14
+  updated: 2015-09-16 18:21:14

@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Relación de Tarifas</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Distrito origen</th>
+      <th>Distrito origen</th>
+      <th>Tarifa</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @tarifario_registros.each do |tarifario_registro| %>
+      <tr>
+        <td><%= tarifario_registro.distrito_origen %></td>
+        <td><%= tarifario_registro.distrito_origen %></td>
+        <td><%= tarifario_registro.tarifa %></td>
+        <td><%= link_to 'Show', tarifario_registro %></td>
+        <td><%= link_to 'Edit', edit_tarifario_registro_path(tarifario_registro) %></td>
+        <td><%= link_to 'Destroy', tarifario_registro, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'Registrar Tarifa', new_tarifario_registro_path %>

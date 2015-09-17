@@ -1,0 +1,20 @@
+<h1>Consulta de datos de la Direccion Favorita</h1>
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nombre:</strong>
+  <%= @dirfavorita_registro.nombre %>
+</p>
+
+<p>
+  <strong>Dirfavorita:</strong>
+  <%= @dirfavorita_registro.dirfavorita %>
+</p>
+
+<p>
+  <strong>Distrito:</strong>
+  <%= @dirfavorita_registro.distrito %>
+</p>
+
+<%= link_to 'Edit', edit_dirfavorita_registro_path(@dirfavorita_registro) %> |
+<%= link_to 'Back', dirfavorita_registros_path %>

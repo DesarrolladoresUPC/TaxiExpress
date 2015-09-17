@@ -1,0 +1,22 @@
+<%= simple_form_for(@reserva) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :codigo %>
+    <%= f.input :direccion_origen %>
+    <%= f.input :distrito_origen %>
+    <%= f.input :direccion_destino %>
+    <%= f.input :distrito_destino %>
+    <%= f.input :cantidad_pasajeros %>
+    <%= f.association :categoria, :as => :select %>
+    <%= f.input :tarifa_final %>
+    <%= f.input :metodo_pago %>
+    <%= f.input :estado %>
+    <%= f.input :chofer %>
+    <%= f.input :usuario %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

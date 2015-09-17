@@ -1,0 +1,53 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Relación de Reservas</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Codigo</th>
+      <th>Direccion origen</th>
+      <th>Distrito origen</th>
+      <th>Direccion destino</th>
+      <th>Distrito destino</th>
+      <th>Cantidad pasajeros</th>
+      <th>Categoria</th>
+      <th>Tarifa final</th>
+      <th>Metodo pago</th>
+      <th>Estado</th>
+      <th>Chofer</th>
+      <th>Usuario</th>
+      <th>Created</th>
+      <th>Updated</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @reservas.each do |reserva| %>
+      <tr>
+        <td><%= reserva.codigo %></td>
+        <td><%= reserva.direccion_origen %></td>
+        <td><%= reserva.distrito_origen %></td>
+        <td><%= reserva.direccion_destino %></td>
+        <td><%= reserva.distrito_destino %></td>
+        <td><%= reserva.cantidad_pasajeros %></td>
+        <td><%= reserva.categoria %></td>
+        <td><%= reserva.tarifa_final %></td>
+        <td><%= reserva.metodo_pago %></td>
+        <td><%= reserva.estado %></td>
+        <td><%= reserva.chofer %></td>
+        <td><%= reserva.usuario %></td>
+        <td><%= reserva.created %></td>
+        <td><%= reserva.updated %></td>
+        <td><%= link_to 'Show', reserva %></td>
+        <td><%= link_to 'Edit', edit_reserva_path(reserva) %></td>
+        <td><%= link_to 'Destroy', reserva, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'Registrar Reserva', new_reserva_path %>

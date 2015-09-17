@@ -1,0 +1,20 @@
+<h1>Consultar los datos del Feedback</h1>
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Calificacion:</strong>
+  <%= @feedback_registro.calificacion %>
+</p>
+
+<p>
+  <strong>Comentario:</strong>
+  <%= @feedback_registro.comentario %>
+</p>
+
+<p>
+  <strong>Distrito:</strong>
+  <%= @feedback_registro.distrito %>
+</p>
+
+<%= link_to 'Edit', edit_feedback_registro_path(@feedback_registro) %> |
+<%= link_to 'Back', feedback_registros_path %>

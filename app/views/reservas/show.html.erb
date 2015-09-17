@@ -1,0 +1,75 @@
+<h1>Consultar los datos de la Reserva</h1>
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Codigo:</strong>
+  <%= @reserva.codigo %>
+</p>
+
+<p>
+  <strong>Direccion origen:</strong>
+  <%= @reserva.direccion_origen %>
+</p>
+
+<p>
+  <strong>Distrito origen:</strong>
+  <%= @reserva.distrito_origen %>
+</p>
+
+<p>
+  <strong>Direccion destino:</strong>
+  <%= @reserva.direccion_destino %>
+</p>
+
+<p>
+  <strong>Distrito destino:</strong>
+  <%= @reserva.distrito_destino %>
+</p>
+
+<p>
+  <strong>Cantidad pasajeros:</strong>
+  <%= @reserva.cantidad_pasajeros %>
+</p>
+
+<p>
+  <strong>Categoria:</strong>
+  <%= @reserva.categoria %>
+</p>
+
+<p>
+  <strong>Tarifa final:</strong>
+  <%= @reserva.tarifa_final %>
+</p>
+
+<p>
+  <strong>Metodo pago:</strong>
+  <%= @reserva.metodo_pago %>
+</p>
+
+<p>
+  <strong>Estado:</strong>
+  <%= @reserva.estado %>
+</p>
+
+<p>
+  <strong>Chofer:</strong>
+  <%= @reserva.chofer %>
+</p>
+
+<p>
+  <strong>Usuario:</strong>
+  <%= @reserva.usuario %>
+</p>
+
+<p>
+  <strong>Created:</strong>
+  <%= @reserva.created %>
+</p>
+
+<p>
+  <strong>Updated:</strong>
+  <%= @reserva.updated %>
+</p>
+
+<%= link_to 'Edit', edit_reserva_path(@reserva) %> |
+<%= link_to 'Back', reservas_path %>

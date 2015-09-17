@@ -1,0 +1,30 @@
+<h1>Consultar los datos del Operador</h1>
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Codigo:</strong>
+  <%= @operador_registro.codigo %>
+</p>
+
+<p>
+  <strong>Nombres:</strong>
+  <%= @operador_registro.nombres %>
+</p>
+
+<p>
+  <strong>Apellidos:</strong>
+  <%= @operador_registro.apellidos %>
+</p>
+
+<p>
+  <strong>Telefono:</strong>
+  <%= @operador_registro.telefono %>
+</p>
+
+<p>
+  <strong>Cuenta:</strong>
+  <%= @operador_registro.cuenta %>
+</p>
+
+<%= link_to 'Edit', edit_operador_registro_path(@operador_registro) %> |
+<%= link_to 'Back', operador_registros_path %>

@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nombre: MyString
+  dirfavorita: MyString
+  distrito: MyString
+
+two:
+  nombre: MyString
+  dirfavorita: MyString
+  distrito: MyString

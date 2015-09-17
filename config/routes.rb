@@ -1,19 +1,32 @@
 Rails.application.routes.draw do
+  resources :cuenta
+  resources :distritos
+  resources :operador_registros
+  resources :metodo_pago_registros
+  resources :vehiculo_registros
+  resources :chofer_registros
+  resources :tarifario_registros
+  resources :feedback_registros
+  resources :dirfavorita_registros
+  resources :conductor_registros
+  resources :cliente_registros
+  resources :categoria
+  resources :reservas
+
   get 'sesion/primario'
 
   get 'operator/admin'
 
   get 'iniciar/standar'
 
+  get 'categoria/index'
   get 'iniciar/client'
 
   get 'iniciar/chofer'
-
-
+  
+  get 'operator/adminhome'
   
 
-  resources :conductor_registros
-  resources :cliente_registros
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

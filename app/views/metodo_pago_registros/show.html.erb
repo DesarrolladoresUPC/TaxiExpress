@@ -1,0 +1,15 @@
+<h1>Consutar los datos del Metodo de Pago</h1>
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Codigo:</strong>
+  <%= @metodo_pago_registro.codigo %>
+</p>
+
+<p>
+  <strong>Nombre:</strong>
+  <%= @metodo_pago_registro.nombre %>
+</p>
+
+<%= link_to 'Edit', edit_metodo_pago_registro_path(@metodo_pago_registro) %> |
+<%= link_to 'Back', metodo_pago_registros_path %>

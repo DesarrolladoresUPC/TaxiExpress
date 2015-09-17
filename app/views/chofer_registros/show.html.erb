@@ -1,0 +1,45 @@
+<h1>Información del  Chofer</h1>
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Codigo:</strong>
+  <%= @chofer_registro.codigo %>
+</p>
+
+<p>
+  <strong>Nombres:</strong>
+  <%= @chofer_registro.nombres %>
+</p>
+
+<p>
+  <strong>Apellidos:</strong>
+  <%= @chofer_registro.apellidos %>
+</p>
+
+<p>
+  <strong>Telefono:</strong>
+  <%= @chofer_registro.telefono %>
+</p>
+
+<p>
+  <strong>Distrito:</strong>
+  <%= @chofer_registro.distrito %>
+</p>
+
+<p>
+  <strong>Estado:</strong>
+  <%= @chofer_registro.estado %>
+</p>
+
+<p>
+  <strong>Cuenta:</strong>
+  <%= @chofer_registro.cuenta %>
+</p>
+
+<p>
+  <strong>Placa:</strong>
+  <%= @chofer_registro.placa %>
+</p>
+
+<%= link_to 'Edit', edit_chofer_registro_path(@chofer_registro) %> |
+<%= link_to 'Back', chofer_registros_path %>

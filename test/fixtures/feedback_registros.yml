@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  calificacion: 1.5
+  comentario: MyString
+  distrito: MyString
+
+two:
+  calificacion: 1.5
+  comentario: MyString
+  distrito: MyString

@@ -1,0 +1,2 @@
+module TarifarioRegistrosHelper
+end

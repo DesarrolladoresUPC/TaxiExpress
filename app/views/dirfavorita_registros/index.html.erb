@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Relación de Direcciones Favoritas</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nombre</th>
+      <th>Dirfavorita</th>
+      <th>Distrito</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @dirfavorita_registros.each do |dirfavorita_registro| %>
+      <tr>
+        <td><%= dirfavorita_registro.nombre %></td>
+        <td><%= dirfavorita_registro.dirfavorita %></td>
+        <td><%= dirfavorita_registro.distrito %></td>
+        <td><%= link_to 'Show', dirfavorita_registro %></td>
+        <td><%= link_to 'Edit', edit_dirfavorita_registro_path(dirfavorita_registro) %></td>
+        <td><%= link_to 'Destroy', dirfavorita_registro, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'Nueva Direccion Favorita', new_dirfavorita_registro_path %>

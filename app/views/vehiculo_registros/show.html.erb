@@ -1,0 +1,30 @@
+<h1>Consultar los datos del Vehiculo</h1>
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Placa:</strong>
+  <%= @vehiculo_registro.placa %>
+</p>
+
+<p>
+  <strong>Marca:</strong>
+  <%= @vehiculo_registro.marca %>
+</p>
+
+<p>
+  <strong>Modelo:</strong>
+  <%= @vehiculo_registro.modelo %>
+</p>
+
+<p>
+  <strong>Color:</strong>
+  <%= @vehiculo_registro.color %>
+</p>
+
+<p>
+  <strong>Categoria:</strong>
+  <%= @vehiculo_registro.categoria %>
+</p>
+
+<%= link_to 'Edit', edit_vehiculo_registro_path(@vehiculo_registro) %> |
+<%= link_to 'Back', vehiculo_registros_path %>
